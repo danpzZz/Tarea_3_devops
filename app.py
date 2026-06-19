@@ -99,7 +99,8 @@ HTML = """
 <div class="bg"></div>
 
 <div class="card">
-    <h1>🕒 Reloj actualizado</h1>
+
+    <h1>🕒 Reloj mundia actualizado</h1>
 
     <div id="clock">00:00:00</div>
     <div id="date">Cargando fecha...</div>
@@ -146,4 +147,10 @@ def contacto():
     return """
     <h1>Contacto</h1>
     <p>correo@ejemplo.com</p>
+    
+@app.route("/acerca")
+def acerca():
+    return """
+    <h1>Acerca del Proyecto</h1>
+    <p>Aplicación desarrollada con Flask para la práctica de Git y GitHub.</p>
     """
