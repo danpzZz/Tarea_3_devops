@@ -140,3 +140,11 @@ def home():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
+    
+    
+@app.route("/acerca")
+def acerca():
+    return """
+    <h1>Acerca del Proyecto</h1>
+    <p>Aplicación desarrollada con Flask para la práctica de Git y GitHub.</p>
+    """
