@@ -99,7 +99,7 @@ HTML = """
 <div class="bg"></div>
 
 <div class="card">
-    <h1>🕒 Reloj en Tiempo Real</h1>
+    <h1>🕒 Reloj mundial</h1>
 
     <div id="clock">00:00:00</div>
     <div id="date">Cargando fecha...</div>
