@@ -99,7 +99,7 @@ HTML = """
 <div class="bg"></div>
 
 <div class="card">
-    <h1>🕒 Reloj en Tiempo Real</h1>
+    <h1>🕒 Reloj mundial</h1>
 
     <div id="clock">00:00:00</div>
     <div id="date">Cargando fecha...</div>
@@ -140,3 +140,11 @@ def home():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
+    
+    
+@app.route("/acerca")
+def acerca():
+    return """
+    <h1>Acerca del Proyecto</h1>
+    <p>Aplicación desarrollada con Flask para la práctica de Git y GitHub.</p>
+    """
