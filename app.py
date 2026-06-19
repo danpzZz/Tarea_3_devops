@@ -139,18 +139,19 @@ updateClock();
 def home():
     return render_template_string(HTML)
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
-    
 @app.route("/contacto")
 def contacto():
     return """
     <h1>Contacto</h1>
     <p>correo@ejemplo.com</p>
-    
+    """
+
 @app.route("/acerca")
 def acerca():
     return """
     <h1>Acerca del Proyecto</h1>
     <p>Aplicación desarrollada con Flask para la práctica de Git y GitHub.</p>
     """
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
